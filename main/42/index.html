@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Coming Soon</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="Ashok">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+		
+		<!-- Coming Soon Starts -->
+		
+		<div class="coming-soon">
+			<!-- Heading -->
+			<h3>Coming Soon</h3>
+			<!-- Countdown -->
+			<div class="countdown"></div>
+			<hr />
+			<h4><i class="fa fa-envelope"></i> &nbsp; something@gmail.com &nbsp; <i class="fa fa-phone"></i> &nbsp; +(492)-383-424-3838</h4>
+			<hr />
+		</div>
+		
+		<!-- Coming Soon Ends -->	
+		
+		<!-- Footer Starts -->
+		
+		<div class="footer">
+			Copyright &copy; - <a href="#">Your Site</a>
+		</div>
+
+			
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Countdown JS -->
+		<script src="js/countdown.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script type="text/javascript">
+			/* Countdown */
+			$('.countdown').countdown('2028/10/16', function(event) {
+			 var $this = $(this).html(event.strftime(''
+				 + '<div class="date">%Y <span>Years</span></div> '
+				 + '<div class="date">%m <span>Months</span></div>  '
+				 + '<div class="date">%H <span>Hrs</span></div>  '
+				 + '<div class="date">%S <span>Sec</span></div> '));
+			});
+		</script>
+		
+	</body>	
+</html>
