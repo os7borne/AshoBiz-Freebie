@@ -1,0 +1,52 @@
+
+<!-- Contact form -->
+<div class="cform">
+	<form>
+		<!-- Name -->
+		<div class="form-group">
+			<input type="text" class="form-control" id="name" placeholder="Enter Name">
+		</div>
+		<!-- Email -->
+		<div class="form-group">
+			<input type="email" class="form-control" id="email" placeholder="Enter Email">
+		</div>
+		<!-- Message -->
+		<div class="form-group">
+			<textarea class="form-control" rows="5" placeholder="Enter Message"></textarea>
+		</div>
+		<!-- Buttons -->
+		<button type="submit" class="btn btn-green">Send</button>
+		<button type="reset" class="btn btn-default">Reset</button>
+	</form>
+</div>
+
+
+
+/* Contact form */
+.cform{
+	margin:20px 0px;
+	margin-bottom:30px;
+	.form-group{
+		margin:20px 0px;		
+	}
+	input, textarea{		
+		border:0px;
+		box-shadow:none !important;
+		border-bottom:1px solid #ddd;
+		padding:20px 15px;
+		font-size:14px;
+		border-radius:0px;
+		.transition(1s, ease-out);
+		&:hover, &:focus{			
+			background:#fcfcfc;
+			border-bottom:1px solid #aaa;
+		}
+	}
+	button{
+		font-size:14px;
+		border:0px;
+		text-transform:uppercase;
+		border-radius:0px;
+		padding:8px 18px;
+	}
+}

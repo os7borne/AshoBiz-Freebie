@@ -1,0 +1,49 @@
+<!-- HTML To top -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="fa fa-angle-up bg-red"></i></a></span>
+
+
+/* Scroll to top */
+.totop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 104400;
+	display:none;
+	a i{
+		display: block;
+		width: 32px;
+		height: 32px;
+		line-height: 30px;
+		background:@violet;
+		text-align: center;
+		font-size: 20px;
+		border-radius: 2px;
+	}
+	a,a:hover,a:visited{
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+
+<script type="text/javascript">
+/* ************* */
+/* Scroll to top */
+/* ************* */
+$(document).ready(function() {
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 200) {
+			$('.totop').fadeIn();
+		} else {
+			$('.totop').fadeOut();
+		}
+	});
+	$(".totop a").click(function(e) {
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
+});
+</script>

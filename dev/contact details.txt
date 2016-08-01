@@ -1,0 +1,46 @@
+Contact details
+
+<!-- Contact details -->
+<div class="cdetails">
+	<p>For any questions or comments, please use the below details.</p>
+	<p><i class="fa fa-envelope"></i> Email : <a href="mailto:youremail@gmail.com">somethingemail@gmail.com</a></p>
+	<p><i class="fa fa-phone"></i> Phone : +91 (383) 383 3828</p>
+	<p><i class="fa fa-home"></i> 19/142, Smamm Kuarl Street, London, UK.</p>
+	<!-- Social media -->
+	<div class="social">
+		<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+		<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+		<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	</div>
+</div>
+				
+
+/* Contact details */
+.cdetails{
+	font-size:14px;
+	line-height:28px;
+	color:#888;
+	p{
+		font-size:14px;
+		line-height:34px;
+		i{			
+			display:inline-block;
+			width:30px;
+			color:#444;
+			text-align:center;
+		}
+	}
+	.social a{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		font-size:17px;
+		margin-top:10px;
+		color:#fff;
+	}	
+}			
