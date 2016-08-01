@@ -1,0 +1,15 @@
+Credits:
+
+Bootstrap - http://getbootstrap.com
+jQuery - http://jquery.com
+Unsplash - https://unsplash.com/
+Pixabay - https://pixabay.com/
+Subtle Patterns - http://subtlepatterns.com/
+Font awesome icons - http://fortawesome.github.io/Font-Awesome/
+Animate.css - http://daneden.me/animate
+Magnific popup - http://dimsemenov.com/plugins/magnific-popup/
+Owl carousel - http://owlgraphic.com/owlcarousel/
+HTML5Shiv - https://github.com/aFarkas/html5shiv
+Respond js - https://github.com/scottjehl/Respond
+LESS - http://lesscss.org/
+LESS Elements - http://lesselements.com
