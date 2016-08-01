@@ -1,0 +1,568 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600');
+/* ***********************
+Designed by : http://wrapbootstrap.com/user/ashobiz
+*********************** */
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Color variables */
+/* Dark colors */
+/* Text Colors */
+.white {
+  color: #ffffff;
+}
+.grey {
+  color: #eeeeee;
+}
+.black {
+  color: #666666;
+}
+.red {
+  color: #f75353;
+}
+.green {
+  color: #51d466;
+}
+.lblue {
+  color: #32c8de;
+}
+.blue {
+  color: #609cec;
+}
+.orange {
+  color: #f78153;
+}
+.yellow {
+  color: #fcd419;
+}
+.violet {
+  color: #cb79e6;
+}
+.rose {
+  color: #ff61e7;
+}
+.brown {
+  color: #d08166;
+}
+/* Background Colors */
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-grey {
+  background-color: #eeeeee;
+}
+.bg-black {
+  background-color: #666666;
+}
+.bg-red {
+  background-color: #f75353;
+}
+.bg-green {
+  background-color: #51d466;
+}
+.bg-lblue {
+  background-color: #32c8de;
+}
+.bg-blue {
+  background-color: #609cec;
+}
+.bg-orange {
+  background-color: #f78153;
+}
+.bg-yellow {
+  background-color: #fcd419;
+}
+.bg-violet {
+  background-color: #cb79e6;
+}
+.bg-rose {
+  background-color: #ff61e7;
+}
+.bg-brown {
+  background-color: #d08166;
+}
+/* Button Colors */
+.btn.btn-white {
+  background: #ffffff;
+  color: #666666;
+  border: 1px solid #e6e6e6;
+}
+.btn.btn-white:hover,
+.btn.btn-white:active,
+.btn.btn-white:focus {
+  background: #e6e6e6;
+  color: #666666;
+}
+.btn.btn-black {
+  background: #666666;
+  color: #ffffff;
+  border: 1px solid #4d4d4d;
+}
+.btn.btn-black:hover,
+.btn.btn-black:active,
+.btn.btn-black:focus {
+  background: #4d4d4d;
+  color: #ffffff;
+}
+.btn.btn-red {
+  background: #f75353;
+  color: #ffffff;
+  border: 1px solid #f20b0b;
+}
+.btn.btn-red:hover,
+.btn.btn-red:active,
+.btn.btn-red:focus {
+  background: #f20b0b;
+  color: #ffffff;
+}
+.btn.btn-green {
+  background: #51d466;
+  color: #ffffff;
+  border: 1px solid #2bae40;
+}
+.btn.btn-green:hover,
+.btn.btn-green:active,
+.btn.btn-green:focus {
+  background: #2bae40;
+  color: #ffffff;
+}
+.btn.btn-lblue {
+  background: #32c8de;
+  color: #ffffff;
+  border: 1px solid #1b96a8;
+}
+.btn.btn-lblue:hover,
+.btn.btn-lblue:active,
+.btn.btn-lblue:focus {
+  background: #1b96a8;
+  color: #ffffff;
+}
+.btn.btn-blue {
+  background: #609cec;
+  color: #ffffff;
+  border: 1px solid #1c71e4;
+}
+.btn.btn-blue:hover,
+.btn.btn-blue:active,
+.btn.btn-blue:focus {
+  background: #1c71e4;
+  color: #ffffff;
+}
+.btn.btn-orange {
+  background: #f78153;
+  color: #ffffff;
+  border: 1px solid #f24c0b;
+}
+.btn.btn-orange:hover,
+.btn.btn-orange:active,
+.btn.btn-orange:focus {
+  background: #f24c0b;
+  color: #ffffff;
+}
+.btn.btn-yellow {
+  background: #fcd419;
+  color: #ffffff;
+  border: 1px solid #c6a303;
+}
+.btn.btn-yellow:hover,
+.btn.btn-yellow:active,
+.btn.btn-yellow:focus {
+  background: #c6a303;
+  color: #ffffff;
+}
+.btn.btn-violet {
+  background: #cb79e6;
+  color: #ffffff;
+  border: 1px solid #b239da;
+}
+.btn.btn-violet:hover,
+.btn.btn-violet:active,
+.btn.btn-violet:focus {
+  background: #b239da;
+  color: #ffffff;
+}
+.btn.btn-rose {
+  background: #ff61e7;
+  color: #ffffff;
+  border: 1px solid #ff15db;
+}
+.btn.btn-rose:hover,
+.btn.btn-rose:active,
+.btn.btn-rose:focus {
+  background: #ff15db;
+  color: #ffffff;
+}
+.btn.btn-brown {
+  background: #d08166;
+  color: #ffffff;
+  border: 1px solid #b35637;
+}
+.btn.btn-brown:hover,
+.btn.btn-brown:active,
+.btn.btn-brown:focus {
+  background: #b35637;
+  color: #ffffff;
+}
+/* Labels */
+.label.label-white {
+  background: #e6e6e6;
+  color: #666666;
+}
+.label.label-black {
+  background: #666666;
+  color: #ffffff;
+}
+.label.label-red {
+  background: #f75353;
+  color: #ffffff;
+}
+.label.label-green {
+  background: #51d466;
+  color: #ffffff;
+}
+.label.label-lblue {
+  background: #32c8de;
+  color: #ffffff;
+}
+.label.label-blue {
+  background: #609cec;
+  color: #ffffff;
+}
+.label.label-red {
+  background: #f75353;
+  color: #ffffff;
+}
+.label.label-orange {
+  background: #f78153;
+  color: #ffffff;
+}
+.label.label-yellow {
+  background: #fcd419;
+  color: #ffffff;
+}
+.label.label-violet {
+  background: #cb79e6;
+  color: #ffffff;
+}
+.label.label-rose {
+  background: #ff61e7;
+  color: #ffffff;
+}
+.label.label-brown {
+  background: #d08166;
+  color: #ffffff;
+}
+/* Social Media */
+.facebook {
+  background: #609cec;
+}
+.facebook:hover {
+  background: #1c71e4;
+}
+.twitter {
+  background: #32c8de;
+}
+.twitter:hover {
+  background: #1b96a8;
+}
+.google-plus {
+  background: #f75353;
+}
+.google-plus:hover {
+  background: #f20b0b;
+}
+.linkedin {
+  background: #bbd5f7;
+}
+.linkedin:hover {
+  background: #609cec;
+}
+.pinterest {
+  background: #f52222;
+}
+.pinterest:hover {
+  background: #a90808;
+}
+.instagram {
+  background: #e8c1b4;
+}
+.instagram:hover {
+  background: #d08166;
+}
+/* General CSS */
+body {
+  color: #666666;
+  font-size: 13px;
+  line-height: 28px;
+  background: #f8f8f8 url("../img/pattern.png");
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+  border-bottom: 1px dotted #b3b3b3;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #666666;
+  border-bottom: 0px;
+}
+.outer {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 10px 20px;
+}
+.outer .container-fluid {
+  padding: 0px;
+}
+/* Header */
+header {
+  margin-bottom: 25px;
+}
+header > h1 {
+  font-size: 45px;
+  line-height: 45px;
+}
+@media (max-width: 550px) {
+  header > h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+header > h1 a {
+  border: 0px;
+}
+header > p {
+  font-size: 18px;
+  line-height: 33px;
+  color: #999;
+}
+/* Navigation */
+.nav {
+  margin: 15px 0px;
+}
+.nav > a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 5px 0px;
+  margin-right: 15px;
+  border: 0px;
+  border-top: 2px solid #32c8de;
+  border-bottom: 2px solid #32c8de;
+  padding: 1px 12px;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.nav > a:hover {
+  color: #fff;
+  background: #32c8de;
+}
+/* Hero */
+.hero {
+  margin: 20px 0px;
+}
+.hero img {
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 550px) {
+  .hero img {
+    padding: 3px;
+  }
+}
+/* Navigation icon */
+.c-list {
+  margin: 20px 0px 10px 0px;
+}
+.c-list li {
+  padding-left: 17px;
+  margin: 6px 0px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #eee;
+  text-transform: capitalize;
+}
+.c-list li :before {
+  color: #32c8de;
+  content: "\f101";
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -17px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.c-list li a {
+  border: 0px;
+}
+/* Content */
+.content {
+  margin: 10px 0px;
+}
+.b-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}
+.b-item h2 {
+  font-weight: 400;
+  line-height: 40px;
+}
+.b-item h2 a {
+  border: 0px;
+}
+@media (max-width: 550px) {
+  .b-item h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+.b-item .meta {
+  margin: 10px 0px;
+  color: #777;
+}
+.b-item p {
+  line-height: 30px;
+}
+.b-item p img {
+  float: left;
+  width: 250px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Comments */
+.comments {
+  margin: 25px 0px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.comments h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.comments .com-item {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+.comments .com-item.reply {
+  margin-left: 25px;
+}
+.comment-form {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+.comment-form h4 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.comment-form form {
+  margin-bottom: 10px;
+}
+/* Sides */
+.sides {
+  margin: 20px 0px 30px 0px;
+  background: #fff;
+  padding: 17px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-top: 2px solid #32c8de;
+  border-radius: 5px;
+}
+.sides h4 {
+  text-transform: uppercase;
+}
+/* Contact form */
+.cform {
+  margin: 20px 0px;
+  margin-bottom: 30px;
+}
+.cform .form-group {
+  margin: 20px 0px;
+}
+.cform input,
+.cform textarea {
+  border: 0px;
+  box-shadow: none !important;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 15px;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.cform input:hover,
+.cform textarea:hover,
+.cform input:focus,
+.cform textarea:focus {
+  background: #fcfcfc;
+  border-bottom: 1px solid #aaa;
+}
+.cform button {
+  font-size: 14px;
+  border: 0px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 18px;
+}
+/* Footer */
+.foot {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  border-top: 3px solid #eee;
+  margin: 20px 0px;
+}
+.foot * {
+  color: #808080;
+}
+.foot .foot-block {
+  margin-bottom: 20px;
+}
+.foot .foot-block h4 {
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+}
+.foot .foot-block p {
+  font-size: 13px;
+  line-height: 32px;
+}
+footer {
+  margin: 10px 0px;
+}
