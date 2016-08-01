@@ -1,0 +1,505 @@
+/* ***********************
+Designed by : http://wrapbootstrap.com/user/ashobiz
+*********************** */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600');
+@import "elements.less";
+
+/* Color variables */
+
+@white: #fff;
+@grey: #eee;
+@black: #666;
+@red: #f75353;
+@green: #51d466;
+@lblue: #32c8de;
+@blue: #609cec;
+@orange: #f78153;
+@yellow: #fcd419;
+@violet: #cb79e6;
+@rose: #ff61e7;
+@brown: #d08166;
+
+/* Dark colors */
+@d-red: darken(@red,15%);
+@d-green: darken(@green,15%);
+@d-lblue: darken(@lblue,15%);
+@d-blue: darken(@blue,15%);
+@d-orange: darken(@orange,15%);
+@d-yellow: darken(@yellow,15%);
+@d-violet: darken(@violet,15%);
+@d-rose: darken(@rose,15%);
+@d-brown: darken(@brown,15%);
+
+/* Text Colors */
+.white{color:@white;}
+.grey{color:@grey;}
+.black{color:@black;}
+.red{color:@red;}
+.green{color:@green;}
+.lblue{color:@lblue;}
+.blue{color:@blue;}
+.orange{color:@orange;}
+.yellow{color:@yellow;}
+.violet{color:@violet;}
+.rose{color:@rose;}
+.brown{color:@brown;}
+
+/* Background Colors */
+.bg-white{background-color:@white;}
+.bg-grey{background-color:@grey;}
+.bg-black{background-color:@black;}
+.bg-red{background-color:@red;}
+.bg-green{background-color:@green;}
+.bg-lblue{background-color:@lblue;}
+.bg-blue{background-color:@blue;}
+.bg-orange{background-color:@orange;}
+.bg-yellow{background-color:@yellow;}
+.bg-violet{background-color:@violet;}
+.bg-rose{background-color:@rose;}
+.bg-brown{background-color:@brown;}
+
+/* Button Colors */
+.btn{
+	&.btn-white{
+		background:@white;
+		color:@black;
+		border:1px solid darken(@white,10%);
+		&:hover,&:active,&:focus{
+			background:darken(@white,10%);
+			color:@black;
+		}
+	}
+	&.btn-black{
+		background:@black;
+		color:@white;
+		border:1px solid darken(@black,10%);
+		&:hover,&:active,&:focus{
+			background:darken(@black,10%);
+			color:@white;
+		}
+	}
+	&.btn-red{
+		background:@red;
+		color:@white;
+		border:1px solid @d-red;
+		&:hover,&:active,&:focus{
+			background:@d-red;
+			color:@white;
+		}
+	}
+	&.btn-green{
+		background:@green;
+		color:@white;
+		border:1px solid @d-green;
+		&:hover,&:active,&:focus{
+			background:@d-green;
+			color:@white;
+		}
+	}
+	&.btn-lblue{
+		background:@lblue;
+		color:@white;
+		border:1px solid @d-lblue;
+		&:hover,&:active,&:focus{
+			background:@d-lblue;
+			color:@white;
+		}
+	}
+	&.btn-blue{
+		background:@blue;
+		color:@white;
+		border:1px solid @d-blue;
+		&:hover,&:active,&:focus{
+			background:@d-blue;
+			color:@white;
+		}
+	}
+	&.btn-orange{
+		background:@orange;
+		color:@white;
+		border:1px solid @d-orange;
+		&:hover,&:active,&:focus{
+			background:@d-orange;
+			color:@white;
+		}
+	}
+	&.btn-yellow{
+		background:@yellow;
+		color:@white;
+		border:1px solid @d-yellow;
+		&:hover,&:active,&:focus{
+			background:@d-yellow;
+			color:@white;
+		}
+	}
+	&.btn-violet{
+		background:@violet;
+		color:@white;
+		border:1px solid @d-violet;
+		&:hover,&:active,&:focus{
+			background:@d-violet;
+			color:@white;
+		}
+	}
+	&.btn-rose{
+		background:@rose;
+		color:@white;
+		border:1px solid @d-rose;
+		&:hover,&:active,&:focus{
+			background:@d-rose;
+			color:@white;
+		}
+	}
+	&.btn-brown{
+		background:@brown;
+		color:@white;
+		border:1px solid @d-brown;
+		&:hover,&:active,&:focus{
+			background:@d-brown;
+			color:@white;
+		}
+	}
+}
+
+/* Labels */
+.label{
+	&.label-white{
+		background:darken(@white,10%);
+		color:@black;
+	}
+	&.label-black{
+		background:@black;
+		color:@white;
+	}
+	&.label-red{
+		background:@red;
+		color:@white;
+	}
+	&.label-green{
+		background:@green;
+		color:@white;
+	}
+	&.label-lblue{
+		background:@lblue;
+		color:@white;
+	}
+	&.label-blue{
+		background:@blue;
+		color:@white;
+	}
+	&.label-red{
+		background:@red;
+		color:@white;
+	}
+	&.label-orange{
+		background:@orange;
+		color:@white;
+	}
+	&.label-yellow{
+		background:@yellow;
+		color:@white;
+	}
+	&.label-violet{
+		background:@violet;
+		color:@white;
+	}
+	&.label-rose{
+		background:@rose;
+		color:@white;
+	}
+	&.label-brown{
+		background:@brown;
+		color:@white;
+	}
+}
+
+/* Social Media */
+.facebook{	
+	background:@blue; 
+	&:hover{
+		background:@d-blue;
+	}
+}
+.twitter{ 
+	background:@lblue;
+	&:hover{
+		background:@d-lblue;
+	}
+}
+.google-plus{
+	background:@red;
+	&:hover{
+		background:@d-red;
+	}
+}
+.linkedin{	
+	background:lighten(@blue,20%);
+	&:hover{
+		background:@blue
+	}
+}
+.pinterest{	
+	background:darken(@red,10%);
+	&:hover{
+		background:darken(@red,30%);
+	}
+}
+.instagram{	
+	background:lighten(@brown,20%);
+	&:hover{
+		background:@brown;
+	}
+}
+
+/* General CSS */
+body{
+	color: @black;
+	font-size: 13px;
+	line-height: 28px;
+	background: #f8f8f8 url("../img/pattern.png");
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	color: @black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+	color: darken(@black,10%);
+	border-bottom:1px dotted lighten(@black,30%);
+	&:hover,&:active,&:focus{
+		outline: 0;
+		text-decoration: none;
+		color: @black;
+		border-bottom:0px;
+	}
+}
+.outer{
+	max-width:1200px;
+	margin:30px auto;
+	padding:10px 20px;
+	.container-fluid{
+		padding:0px;
+	}
+}
+/* Header */
+header{
+	margin-bottom:25px;
+	> h1{
+		font-size:45px;
+		line-height:45px;
+		@media (max-width:550px){
+			font-size:30px;
+			line-height:30px;
+		}
+		a{
+			border:0px;
+		}
+	}
+	> p{
+		font-size:18px;
+		line-height:33px;
+		color:#999;
+	}
+}
+/* Navigation */
+.nav{
+	margin:15px 0px;
+	> a{
+		display:inline-block;
+		text-transform:uppercase;
+		font-weight:700;
+		margin:5px 0px;
+		margin-right:15px;
+		border:0px;
+		border-top:2px solid @lblue;
+		border-bottom:2px solid @lblue;
+		padding:1px 12px;
+		.transition-duration(0.3s);
+		&:hover{
+			color:#fff;
+			background:@lblue;
+		}
+	}
+}
+/* Hero */
+.hero{
+	margin:20px 0px;
+	img{
+		padding:10px;
+		background:#fff;
+		border-radius:4px;
+		box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+		@media (max-width:550px){
+			padding:3px;
+		}
+	}
+}
+/* Navigation icon */
+.c-list{
+	margin:20px 0px 10px 0px;
+	li{
+		padding-left:17px;
+		margin:6px 0px;
+		padding-bottom:6px;
+		border-bottom:1px dashed #eee;
+		text-transform:capitalize;
+		:before{
+			color:@lblue;
+			content: "\f101";
+			font-family: 'FontAwesome';
+			float: left;
+			margin-left:-17px;
+			font-size:16px;
+			font-weight:normal;
+		}
+		a{
+			border:0px;
+		}
+	}
+}
+/* Content */
+.content{
+	margin:10px 0px;
+}
+.b-item{
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px dashed #ddd;
+	h2{
+		font-weight:400;
+		line-height:40px;
+		a{
+			border:0px;
+		}
+		@media (max-width:550px){
+			font-size:20px;
+			line-height:35px;
+		}
+	}
+	.meta{
+		margin:10px 0px;
+		color:#777;
+	}
+	p{
+		line-height:30px;
+		img{
+			float:left;
+			width:250px;
+			margin-top:10px;
+			margin-right:10px;
+			margin-bottom:10px;
+			padding:5px;
+			background:#fff;
+			border-radius:3px;
+			box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+		}
+	}
+}
+/* Comments */
+.comments{
+	margin:25px 0px;
+	padding-bottom:15px;
+	border-bottom:1px solid #eee;
+	h4{
+		font-weight:400;
+		margin-bottom:10px;
+	}
+	.com-item{
+		background:#fff;
+		padding:10px 15px;
+		border-radius:5px;
+		margin:20px 0px;
+		border:1px solid rgba(0,0,0,0.08);
+		box-shadow:2px 2px 10px rgba(0,0,0,0.05);
+		&.reply{
+			margin-left:25px;
+		}
+	}
+}
+.comment-form{
+	background:#fff;
+	padding:15px 20px;
+	border-radius:5px;
+	margin:20px 0px;
+	border:1px solid rgba(0,0,0,0.08);
+	box-shadow:2px 2px 10px rgba(0,0,0,0.05);
+	h4{
+		font-weight:400;
+		margin-bottom:20px;
+	}
+	form{
+		margin-bottom:10px;
+	}
+}
+/* Sides */
+.sides{
+	margin:20px 0px 30px 0px;
+	background:#fff;
+	padding:17px 20px;
+	border:1px solid rgba(0,0,0,0.08);
+	box-shadow:2px 2px 10px rgba(0,0,0,0.05);
+	border-top:2px solid @lblue;
+	border-radius:5px;
+	h4{
+		text-transform:uppercase;
+	}
+}
+/* Contact form */
+.cform{
+	margin:20px 0px;
+	margin-bottom:30px;
+	.form-group{
+		margin:20px 0px;		
+	}
+	input, textarea{		
+		border:0px;
+		box-shadow:none !important;
+		border-bottom:1px solid #ddd;
+		padding:20px 15px;
+		font-size:14px;
+		border-radius:0px;
+		.transition(1s, ease-out);
+		&:hover, &:focus{			
+			background:#fcfcfc;
+			border-bottom:1px solid #aaa;
+		}
+	}
+	button{
+		font-size:14px;
+		border:0px;
+		text-transform:uppercase;
+		border-radius:4px;
+		padding:8px 18px;
+	}
+}
+/* Footer */
+.foot{
+	background:#fff;
+	padding:20px 25px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.08);
+	box-shadow:2px 2px 10px rgba(0,0,0,0.05);
+	border-top:3px solid #eee;
+	margin:20px 0px;
+	*{
+		color:lighten(@black,10%);
+	}
+	.foot-block{
+		margin-bottom:20px;
+		h4{
+			text-transform:capitalize;
+			padding-bottom:15px;
+			border-bottom:1px dashed #eee;
+		}
+		p{
+			font-size:13px;
+			line-height:32px;
+		}
+	}
+}
+footer{
+	margin:10px 0px;
+}
