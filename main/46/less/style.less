@@ -1,0 +1,557 @@
+/* ***********************
+Designed by : http://wrapbootstrap.com/user/ashobiz
+*********************** */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600');
+@import "elements.less";
+
+/* Color variables */
+
+@white: #fff;
+@grey: #eee;
+@black: #333;
+@red: #f75353;
+@green: #51d466;
+@lblue: #32c8de;
+@blue: #609cec;
+@orange: #f78153;
+@yellow: #fcd419;
+@violet: #cb79e6;
+@rose: #ff61e7;
+@brown: #d08166;
+
+/* Dark colors */
+@d-red: darken(@red,15%);
+@d-green: darken(@green,15%);
+@d-lblue: darken(@lblue,15%);
+@d-blue: darken(@blue,15%);
+@d-orange: darken(@orange,15%);
+@d-yellow: darken(@yellow,15%);
+@d-violet: darken(@violet,15%);
+@d-rose: darken(@rose,15%);
+@d-brown: darken(@brown,15%);
+
+/* Text Colors */
+.white{color:@white;}
+.grey{color:@grey;}
+.black{color:@black;}
+.red{color:@red;}
+.green{color:@green;}
+.lblue{color:@lblue;}
+.blue{color:@blue;}
+.orange{color:@orange;}
+.yellow{color:@yellow;}
+.violet{color:@violet;}
+.rose{color:@rose;}
+.brown{color:@brown;}
+
+/* Background Colors */
+.bg-white{background-color:@white;}
+.bg-grey{background-color:@grey;}
+.bg-black{background-color:@black;}
+.bg-red{background-color:@red;}
+.bg-green{background-color:@green;}
+.bg-lblue{background-color:@lblue;}
+.bg-blue{background-color:@blue;}
+.bg-orange{background-color:@orange;}
+.bg-yellow{background-color:@yellow;}
+.bg-violet{background-color:@violet;}
+.bg-rose{background-color:@rose;}
+.bg-brown{background-color:@brown;}
+
+/* Button Colors */
+.btn{
+	&.btn-white{
+		background:@white;
+		color:@black;
+		border:1px solid darken(@white,10%);
+		&:hover,&:active,&:focus{
+			background:darken(@white,10%);
+			color:@black;
+		}
+	}
+	&.btn-black{
+		background:@black;
+		color:@white;
+		border:1px solid darken(@black,10%);
+		&:hover,&:active,&:focus{
+			background:darken(@black,10%);
+			color:@white;
+		}
+	}
+	&.btn-red{
+		background:@red;
+		color:@white;
+		border:1px solid @d-red;
+		&:hover,&:active,&:focus{
+			background:@d-red;
+			color:@white;
+		}
+	}
+	&.btn-green{
+		background:@green;
+		color:@white;
+		border:1px solid @d-green;
+		&:hover,&:active,&:focus{
+			background:@d-green;
+			color:@white;
+		}
+	}
+	&.btn-lblue{
+		background:@lblue;
+		color:@white;
+		border:1px solid @d-lblue;
+		&:hover,&:active,&:focus{
+			background:@d-lblue;
+			color:@white;
+		}
+	}
+	&.btn-blue{
+		background:@blue;
+		color:@white;
+		border:1px solid @d-blue;
+		&:hover,&:active,&:focus{
+			background:@d-blue;
+			color:@white;
+		}
+	}
+	&.btn-orange{
+		background:@orange;
+		color:@white;
+		border:1px solid @d-orange;
+		&:hover,&:active,&:focus{
+			background:@d-orange;
+			color:@white;
+		}
+	}
+	&.btn-yellow{
+		background:@yellow;
+		color:@white;
+		border:1px solid @d-yellow;
+		&:hover,&:active,&:focus{
+			background:@d-yellow;
+			color:@white;
+		}
+	}
+	&.btn-violet{
+		background:@violet;
+		color:@white;
+		border:1px solid @d-violet;
+		&:hover,&:active,&:focus{
+			background:@d-violet;
+			color:@white;
+		}
+	}
+	&.btn-rose{
+		background:@rose;
+		color:@white;
+		border:1px solid @d-rose;
+		&:hover,&:active,&:focus{
+			background:@d-rose;
+			color:@white;
+		}
+	}
+	&.btn-brown{
+		background:@brown;
+		color:@white;
+		border:1px solid @d-brown;
+		&:hover,&:active,&:focus{
+			background:@d-brown;
+			color:@white;
+		}
+	}
+}
+
+/* Labels */
+.label{
+	&.label-white{
+		background:darken(@white,10%);
+		color:@black;
+	}
+	&.label-black{
+		background:@black;
+		color:@white;
+	}
+	&.label-red{
+		background:@red;
+		color:@white;
+	}
+	&.label-green{
+		background:@green;
+		color:@white;
+	}
+	&.label-lblue{
+		background:@lblue;
+		color:@white;
+	}
+	&.label-blue{
+		background:@blue;
+		color:@white;
+	}
+	&.label-red{
+		background:@red;
+		color:@white;
+	}
+	&.label-orange{
+		background:@orange;
+		color:@white;
+	}
+	&.label-yellow{
+		background:@yellow;
+		color:@white;
+	}
+	&.label-violet{
+		background:@violet;
+		color:@white;
+	}
+	&.label-rose{
+		background:@rose;
+		color:@white;
+	}
+	&.label-brown{
+		background:@brown;
+		color:@white;
+	}
+}
+
+/* Social Media */
+.facebook{	
+	background:@blue; 
+	&:hover{
+		background:@d-blue;
+	}
+}
+.twitter{ 
+	background:@lblue;
+	&:hover{
+		background:@d-lblue;
+	}
+}
+.google-plus{
+	background:@red;
+	&:hover{
+		background:@d-red;
+	}
+}
+.linkedin{	
+	background:lighten(@blue,10%);
+	&:hover{
+		background:@blue
+	}
+}
+.pinterest{	
+	background:darken(@red,10%);
+	&:hover{
+		background:darken(@red,30%);
+	}
+}
+.instagram{	
+	background:lighten(@brown,10%);
+	&:hover{
+		background:@brown;
+	}
+}
+
+/* General CSS */
+body{
+	color: @black;
+	font-size: 13px;
+	line-height: 28px;
+	background: @white;
+	font-family: 'Open Sans', sans-serif;
+	padding-top:70px;
+}
+h1,h2,h3,h4,h5,h6{
+	color: @black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+	color: darken(@black,30%);
+	&:hover,&:active,&:focus{
+		outline: 0;
+		text-decoration: none;
+		color: @black;
+	}
+}
+/* Navbar */
+.navbar{
+	background:@black;
+	box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+	padding:10px 40px;
+	@media (max-width:500px){
+		padding:10px;
+	}
+	.navbar-brand{
+		font-size:23px;
+		line-height:23px;
+		padding-top:14px;
+		font-weight:300;
+		text-transform:uppercase;
+		color:#fff;
+		i{
+			margin-right:5px;
+		}
+		@media (max-width:500px){
+			font-size:18px;
+			line-height:20px;
+			font-weight:400;
+			padding-top:17px;
+		}
+	}
+	.navbar-nav{
+		a{
+			text-transform:uppercase;
+			font-size:16px;
+			font-weight:400;
+			color:#fff;
+			&:hover,&:focus{
+				background:transparent;
+			}
+		}
+	}
+	.navbar-toggle{
+		background:darken(@black,20%);
+		border:0px solid #ddd;
+		.icon-bar{
+			background:#fff;
+		}
+	}
+}
+/* Carousel */
+.carousel{
+	.carousel-caption{
+		bottom:auto;
+		left:0;
+		right:0;
+		top:45%;
+		font-size:40px;
+		background:rgba(0,0,0,0.4);
+		display:inline-block;
+		padding:30px 10px;
+		color:#fff;
+		text-transform:uppercase;
+		font-weight:300;
+		@media (max-width:800px){
+			top:45%;
+			font-size:25px;
+			font-weight:400;
+			padding:15px 10px;
+		}
+		@media (max-width:400px){
+			top:35%;
+		}
+	}
+	.carousel-indicators li{
+		border:2px solid #fff;
+	}
+	.carousel-control{
+		span{
+			position:absolute;
+			top:50%;
+			font-size:30px;
+			@media (max-width:400px){
+				top:45%;
+			}
+		}
+	}
+}
+/* Content */
+.content{
+	padding:20px 40px;
+	@media (max-width:500px){
+		padding:20px;
+	}
+	.page-head{
+		float:left;
+		max-width:300px;
+		h2{
+			.rotation(-90deg);
+			margin-top:150px;
+			font-weight:300;
+			font-size:60px;
+			line-height:75px;
+		}
+		@media (max-width:900px){
+			max-width:200px;
+			h2{
+				margin-top:100px;
+				font-size:30px;
+				line-height:45px;
+				font-weight:400;
+				border-bottom:1px dashed #ddd;
+				padding-bottom:10px;
+			}
+		}
+		@media (max-width:650px){
+			float:none;
+			max-width:100%;
+			h2{
+				.rotation(0deg);
+				margin-top:0px;
+			}
+		}
+	}
+	.main{
+		margin-left:300px;
+		h3{
+			font-size:22px;
+			line-height:37px;
+			font-weight:400;
+		}
+		&.about p{
+			font-size:15px;
+			line-height:35px;
+			margin:20px 0px;
+			&:first-letter{ 
+				float: left; 
+				font-size: 55px; 
+				line-height: 55px; 
+				padding-top: 4px; 
+				padding-right: 8px; 
+				padding-left: 3px; 
+				font-family:Georgia,serif;
+			}	
+			img{
+				width:130px;
+				margin:10px; 
+			}
+		}
+		@media (max-width:900px){
+			margin-left:200px;
+		}
+		@media (max-width:650px){
+			margin-left:0px;
+		}
+	}
+}
+/* Collections */
+.collections{
+	h3{
+		font-weight:300;
+		font-size:30px;
+		line-height:35px;
+	}
+	.tab-content{
+		.container-fluid{
+			padding:0px;
+		}
+		.c-item{
+			margin:15px auto;
+			max-width:300px;
+			position:relative;
+			.c-caption{
+				position:absolute;
+				background:rgba(0,0,0,0.4);
+				bottom:0px;
+				color:#fff;
+				padding:10px 15px;
+				font-size:18px;
+				font-weight:400;
+				width:100%;
+				text-transform:uppercase;
+			}
+		}
+	}
+	.side{
+		margin-top:10px;
+		text-align:right;
+		text-transform:uppercase;
+		h4{
+			font-size:15px;
+			line-height:15px;
+			font-weight:600;
+			display:inline-block;
+			background:@red;
+			color:#fff;
+			padding:8px;
+		}
+		ul{
+			list-style-type:none;
+			margin:0px;
+			padding:0px;
+			a{
+				font-size:30px;
+				line-height:55px;
+				font-weight:300;
+				span{
+					color:@red;
+				}
+			}
+		}
+	}
+}
+/* Contact */
+/* Contact form */
+.cform{
+	margin:20px 0px;
+	margin-bottom:30px;
+	.form-group{
+		margin:20px 0px;		
+	}
+	input, textarea{		
+		border:0px;
+		box-shadow:none !important;
+		border-bottom:1px solid #ddd;
+		padding:20px 15px;
+		font-size:14px;
+		border-radius:0px;
+		.transition(1s, ease-out);
+		&:hover, &:focus{			
+			background:#fcfcfc;
+			border-bottom:1px solid #aaa;
+		}
+	}
+	button{
+		font-size:14px;
+		border:0px;
+		text-transform:uppercase;
+		border-radius:0px;
+		padding:8px 18px;
+	}
+}
+/* Contact details */
+.cdetails{
+	font-size:14px;
+	line-height:28px;
+	color:#888;
+	p{
+		font-size:14px;
+		line-height:34px;
+		i{			
+			display:inline-block;
+			width:30px;
+			color:#444;
+			text-align:center;
+		}
+	}
+	.social a{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		border-radius:2px;
+		font-size:17px;
+		margin-top:10px;
+		color:#fff;
+	}	
+}			
+/* Footer */
+footer{
+	border-top:1px solid #444;
+	padding:20px 20px;
+	font-size:14px;
+	line-height:28px;
+	background:@black;
+	color:#fff;
+	a{
+		color:#fff;
+		text-decoration:underline;
+		&:hover{
+			color:#fff;
+			text-decoration:none;
+		}
+	}
+}
